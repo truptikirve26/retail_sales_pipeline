@@ -1,0 +1,29 @@
+name: 'retail_sales_pipeline'
+version: '1.0'
+config-version: 2
+
+profile: 'default'
+
+source-paths: ["models"]
+analysis-paths: ["analysis"]
+test-paths: ["tests"]
+data-paths: ["data"]
+macro-paths: ["macros"]
+seed-paths: ["seeds"]
+
+models:
+  retail_sales_pipeline:
+    staging:
+      materialized: view
+    marts:
+      materialized: table
+
+seeds:
+  retail_sales_pipeline:
+    raw_sales_data:
+      file: raw_sales_data.csv
+    raw_customers:
+      file: raw_customers.csv
+    raw_products:
+      file: raw_products.csv
+

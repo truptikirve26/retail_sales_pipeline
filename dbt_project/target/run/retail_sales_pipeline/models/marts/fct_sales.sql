@@ -1,11 +1,20 @@
-WITH orders AS (
-    SELECT * FROM {{ ref('stg_orders') }}
+
+  
+    
+    
+
+    create  table
+      "retail_sales"."main"."fct_sales__dbt_tmp"
+  
+    as (
+      WITH orders AS (
+    SELECT * FROM stg_orders
 ),
     customers AS (
-    SELECT * FROM {{ ref('stg_customers') }}
+    SELECT * FROM stg_customers
     ),
     products AS (
-    SELECT * FROM {{ ref('stg_products') }}
+    SELECT * FROM stg_products
     )
 
 SELECT
@@ -21,3 +30,6 @@ SELECT
 FROM orders o
 LEFT JOIN customers c ON o.customer_name = c.customer_name
 LEFT JOIN products p ON o.product_name = p.product_name
+    );
+  
+  

@@ -3,4 +3,4 @@ SELECT
     customer_name,
     city,
     region
-FROM {{ ref('raw_customers') }}
+FROM raw_customers

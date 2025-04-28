@@ -1,0 +1,797 @@
+[0m15:36:32.367296 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb60107790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcbe0c2dff0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcbe0c2d8d0>]}
+
+
+============================== 15:36:32.374521 | 19d28349-4e3c-4de3-9c6d-009dfe53d9ad ==============================
+[0m15:36:32.374521 [info ] [MainThread]: Running with dbt=1.9.4
+[0m15:36:32.375565 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': '/Users/truptikirve/GenAI_Projects/DataEngineering/retail_sales_pipeline/dbt_project/logs', 'fail_fast': 'False', 'profiles_dir': '/Users/truptikirve/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt seed', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m15:36:32.388749 [info ] [MainThread]: Error importing adapter: No module named 'dbt.adapters.snowflake'
+[0m15:36:32.389818 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Credentials in profile "default", target "dev" invalid: Runtime Error
+    Could not find adapter type snowflake!
+[0m15:36:32.392650 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_success": false, "command_wall_clock_time": 0.1876221, "process_in_blocks": "0", "process_kernel_time": 0.303189, "process_mem_max_rss": "88879104", "process_out_blocks": "0", "process_user_time": 2.311284}
+[0m15:36:32.393672 [debug] [MainThread]: Command `dbt seed` failed at 15:36:32.393463 after 0.19 seconds
+[0m15:36:32.394322 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcb60107790>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcbe0bcf760>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fcbe0bcf430>]}
+[0m15:36:32.394984 [debug] [MainThread]: Flushing usage events
+[0m15:36:32.606412 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:39:43.035551 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9020eb37f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f902161e050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f902161d930>]}
+
+
+============================== 15:39:43.041315 | afdd1ae6-aec9-4f69-ad30-73cea1540fc9 ==============================
+[0m15:39:43.041315 [info ] [MainThread]: Running with dbt=1.9.4
+[0m15:39:43.042213 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'fail_fast': 'False', 'log_path': '/Users/truptikirve/GenAI_Projects/DataEngineering/retail_sales_pipeline/dbt_project/logs', 'version_check': 'True', 'profiles_dir': '/Users/truptikirve/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'log_format': 'default', 'introspect': 'True', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'invocation_command': 'dbt seed', 'send_anonymous_usage_stats': 'True'}
+[0m15:39:43.124371 [error] [MainThread]: Encountered an error:
+Runtime Error
+  Credentials in profile "default", target "dev" invalid: 'port' is a required property
+[0m15:39:43.126678 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_success": false, "command_wall_clock_time": 0.21396719, "process_in_blocks": "0", "process_kernel_time": 0.239281, "process_mem_max_rss": "89481216", "process_out_blocks": "0", "process_user_time": 2.019676}
+[0m15:39:43.127609 [debug] [MainThread]: Command `dbt seed` failed at 15:39:43.127410 after 0.21 seconds
+[0m15:39:43.128241 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9020eb37f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8fd01f9060>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8fe0aea350>]}
+[0m15:39:43.128897 [debug] [MainThread]: Flushing usage events
+[0m15:39:43.381041 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:43:25.217733 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd098523820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd0788ddf60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd0788dd840>]}
+
+
+============================== 15:43:25.223523 | 403d209e-95aa-41bf-89cc-51510388b7bd ==============================
+[0m15:43:25.223523 [info ] [MainThread]: Running with dbt=1.9.4
+[0m15:43:25.224432 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'fail_fast': 'False', 'log_path': '/Users/truptikirve/GenAI_Projects/DataEngineering/retail_sales_pipeline/dbt_project/logs', 'profiles_dir': '/Users/truptikirve/.dbt', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'static_parser': 'True', 'log_format': 'default', 'introspect': 'True', 'target_path': 'None', 'invocation_command': 'dbt debug', 'send_anonymous_usage_stats': 'True'}
+[0m15:43:25.240974 [info ] [MainThread]: dbt version: 1.9.4
+[0m15:43:25.241639 [info ] [MainThread]: python version: 3.10.9
+[0m15:43:25.242161 [info ] [MainThread]: python path: /Users/truptikirve/anaconda3/bin/python
+[0m15:43:25.242678 [info ] [MainThread]: os info: macOS-10.16-x86_64-i386-64bit
+[0m15:43:25.335166 [info ] [MainThread]: Using profiles dir at /Users/truptikirve/.dbt
+[0m15:43:25.335906 [info ] [MainThread]: Using profiles.yml file at /Users/truptikirve/.dbt/profiles.yml
+[0m15:43:25.336447 [info ] [MainThread]: Using dbt_project.yml file at /Users/truptikirve/GenAI_Projects/DataEngineering/retail_sales_pipeline/dbt_project/dbt_project.yml
+[0m15:43:25.337290 [info ] [MainThread]: adapter type: postgres
+[0m15:43:25.337831 [info ] [MainThread]: adapter version: 1.9.0
+[0m15:43:25.347657 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `source-paths` config has been renamed to `model-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+[0m15:43:25.348410 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '403d209e-95aa-41bf-89cc-51510388b7bd', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd0b8c53ac0>]}
+[0m15:43:25.349191 [info ] [MainThread]: Configuration:
+[0m15:43:25.349723 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m15:43:25.350396 [info ] [MainThread]:   dbt_project.yml file [[31mERROR invalid[0m]
+[0m15:43:25.350936 [info ] [MainThread]: Required dependencies:
+[0m15:43:25.351547 [debug] [MainThread]: Executing "git --help"
+[0m15:43:25.410799 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m15:43:25.445504 [debug] [MainThread]: STDERR: "b''"
+[0m15:43:25.447310 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m15:43:25.449173 [info ] [MainThread]: Connection:
+[0m15:43:25.450373 [info ] [MainThread]:   host: localhost
+[0m15:43:25.451051 [info ] [MainThread]:   port: 5432
+[0m15:43:25.451843 [info ] [MainThread]:   user: user
+[0m15:43:25.485464 [info ] [MainThread]:   database: mydb
+[0m15:43:25.504988 [info ] [MainThread]:   schema: public
+[0m15:43:25.512685 [info ] [MainThread]:   connect_timeout: 10
+[0m15:43:25.531305 [info ] [MainThread]:   role: None
+[0m15:43:25.532069 [info ] [MainThread]:   search_path: None
+[0m15:43:25.549876 [info ] [MainThread]:   keepalives_idle: 0
+[0m15:43:25.551306 [info ] [MainThread]:   sslmode: None
+[0m15:43:25.552500 [info ] [MainThread]:   sslcert: None
+[0m15:43:25.553129 [info ] [MainThread]:   sslkey: None
+[0m15:43:25.553661 [info ] [MainThread]:   sslrootcert: None
+[0m15:43:25.554166 [info ] [MainThread]:   application_name: dbt
+[0m15:43:25.554667 [info ] [MainThread]:   retries: 1
+[0m15:43:25.555717 [info ] [MainThread]: Registered adapter: postgres=1.9.0
+[0m15:43:25.854124 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m15:43:25.995046 [debug] [MainThread]: Using postgres connection "debug"
+[0m15:43:25.995699 [debug] [MainThread]: On debug: select 1 as id
+[0m15:43:25.996226 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:43:26.000658 [debug] [MainThread]: Postgres adapter: Got a retryable error when attempting to open a postgres connection.
+1 attempts remaining. Retrying in 0 seconds.
+Error:
+connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+[0m15:43:26.002263 [debug] [MainThread]: Postgres adapter: Error running SQL: select 1 as id
+[0m15:43:26.002841 [debug] [MainThread]: Postgres adapter: Rolling back transaction.
+[0m15:43:26.003415 [debug] [MainThread]: On debug: No close available on handle
+[0m15:43:26.003988 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m15:43:26.004649 [info ] [MainThread]: [31m2 checks failed:[0m
+[0m15:43:26.005199 [info ] [MainThread]: Project loading failed for the following reason:
+Runtime Error
+  data-paths and seed-paths cannot both be defined. The `data-paths` config has been deprecated in favor of `seed-paths`. Please update your `dbt_project.yml` configuration to reflect this change.
+
+Error encountered in /Users/truptikirve/GenAI_Projects/DataEngineering/retail_sales_pipeline/dbt_project/dbt_project.yml
+
+
+[0m15:43:26.005778 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  connection to server at "localhost" (::1), port 5432 failed: Connection refused
+  	Is the server running on that host and accepting TCP/IP connections?
+  connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+  	Is the server running on that host and accepting TCP/IP connections?
+  
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m15:43:26.007900 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.91460574, "process_in_blocks": "0", "process_kernel_time": 0.648482, "process_mem_max_rss": "105189376", "process_out_blocks": "0", "process_user_time": 2.745552}
+[0m15:43:26.008814 [debug] [MainThread]: Command `dbt debug` failed at 15:43:26.008619 after 0.92 seconds
+[0m15:43:26.009431 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m15:43:26.010052 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd098523820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd0c8d85810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fd0c8d868c0>]}
+[0m15:43:26.010742 [debug] [MainThread]: Flushing usage events
+[0m15:43:26.354301 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:43:47.189388 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9b8848b7f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9ba8c0e050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9ba8c0d930>]}
+
+
+============================== 15:43:47.195197 | 926fc531-ab38-4dec-b377-660d89b93a50 ==============================
+[0m15:43:47.195197 [info ] [MainThread]: Running with dbt=1.9.4
+[0m15:43:47.196109 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'debug': 'False', 'version_check': 'True', 'log_path': '/Users/truptikirve/GenAI_Projects/DataEngineering/retail_sales_pipeline/dbt_project/logs', 'fail_fast': 'False', 'profiles_dir': '/Users/truptikirve/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'log_format': 'default', 'target_path': 'None', 'invocation_command': 'dbt seed', 'send_anonymous_usage_stats': 'True'}
+[0m15:43:47.298675 [warn ] [MainThread]: [[33mWARNING[0m]: Deprecated functionality
+The `source-paths` config has been renamed to `model-paths`. Please update your
+`dbt_project.yml` configuration to reflect this change.
+[0m15:43:47.299744 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'deprecation', 'label': '926fc531-ab38-4dec-b377-660d89b93a50', 'property_': 'warn', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9ba8bd2590>]}
+[0m15:43:47.300600 [error] [MainThread]: Encountered an error:
+Runtime Error
+  data-paths and seed-paths cannot both be defined. The `data-paths` config has been deprecated in favor of `seed-paths`. Please update your `dbt_project.yml` configuration to reflect this change.
+
+Error encountered in /Users/truptikirve/GenAI_Projects/DataEngineering/retail_sales_pipeline/dbt_project/dbt_project.yml
+[0m15:43:47.302817 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_success": false, "command_wall_clock_time": 0.24572586, "process_in_blocks": "0", "process_kernel_time": 0.236902, "process_mem_max_rss": "90611712", "process_out_blocks": "0", "process_user_time": 2.044269}
+[0m15:43:47.303831 [debug] [MainThread]: Command `dbt seed` failed at 15:43:47.303614 after 0.25 seconds
+[0m15:43:47.304485 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9b8848b7f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9b68300bb0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f9b68321270>]}
+[0m15:43:47.305176 [debug] [MainThread]: Flushing usage events
+[0m15:43:47.478136 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:46:29.334667 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb0980eb820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb0e01cdf60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb0e01cd840>]}
+
+
+============================== 15:46:29.343991 | 40c78fa4-b720-4358-8206-181490e05045 ==============================
+[0m15:46:29.343991 [info ] [MainThread]: Running with dbt=1.9.4
+[0m15:46:29.345821 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/truptikirve/.dbt', 'version_check': 'True', 'debug': 'False', 'log_path': '/Users/truptikirve/GenAI_Projects/DataEngineering/retail_sales_pipeline/dbt_project/logs', 'fail_fast': 'False', 'warn_error': 'None', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'invocation_command': 'dbt debug', 'introspect': 'True', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m15:46:29.368922 [info ] [MainThread]: dbt version: 1.9.4
+[0m15:46:29.369825 [info ] [MainThread]: python version: 3.10.9
+[0m15:46:29.370542 [info ] [MainThread]: python path: /Users/truptikirve/anaconda3/bin/python
+[0m15:46:29.371220 [info ] [MainThread]: os info: macOS-10.16-x86_64-i386-64bit
+[0m15:46:29.507865 [info ] [MainThread]: Using profiles dir at /Users/truptikirve/.dbt
+[0m15:46:29.508927 [info ] [MainThread]: Using profiles.yml file at /Users/truptikirve/.dbt/profiles.yml
+[0m15:46:29.509799 [info ] [MainThread]: Using dbt_project.yml file at /Users/truptikirve/GenAI_Projects/DataEngineering/retail_sales_pipeline/dbt_project/dbt_project.yml
+[0m15:46:29.511143 [info ] [MainThread]: adapter type: postgres
+[0m15:46:29.512054 [info ] [MainThread]: adapter version: 1.9.0
+[0m15:46:29.802704 [info ] [MainThread]: Configuration:
+[0m15:46:29.803633 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m15:46:29.804613 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m15:46:29.806031 [info ] [MainThread]: Required dependencies:
+[0m15:46:29.808928 [debug] [MainThread]: Executing "git --help"
+[0m15:46:29.870894 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--super-prefix=<path>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m15:46:29.872930 [debug] [MainThread]: STDERR: "b''"
+[0m15:46:29.874084 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m15:46:29.875327 [info ] [MainThread]: Connection:
+[0m15:46:29.876605 [info ] [MainThread]:   host: localhost
+[0m15:46:29.877446 [info ] [MainThread]:   port: 5432
+[0m15:46:29.878138 [info ] [MainThread]:   user: user
+[0m15:46:29.878800 [info ] [MainThread]:   database: mydb
+[0m15:46:29.879658 [info ] [MainThread]:   schema: public
+[0m15:46:29.880635 [info ] [MainThread]:   connect_timeout: 10
+[0m15:46:29.881667 [info ] [MainThread]:   role: None
+[0m15:46:29.882504 [info ] [MainThread]:   search_path: None
+[0m15:46:29.883303 [info ] [MainThread]:   keepalives_idle: 0
+[0m15:46:29.884172 [info ] [MainThread]:   sslmode: None
+[0m15:46:29.885005 [info ] [MainThread]:   sslcert: None
+[0m15:46:29.886312 [info ] [MainThread]:   sslkey: None
+[0m15:46:29.888792 [info ] [MainThread]:   sslrootcert: None
+[0m15:46:29.890022 [info ] [MainThread]:   application_name: dbt
+[0m15:46:29.891268 [info ] [MainThread]:   retries: 1
+[0m15:46:29.893075 [info ] [MainThread]: Registered adapter: postgres=1.9.0
+[0m15:46:30.311078 [debug] [MainThread]: Acquiring new postgres connection 'debug'
+[0m15:46:30.421926 [debug] [MainThread]: Using postgres connection "debug"
+[0m15:46:30.422707 [debug] [MainThread]: On debug: select 1 as id
+[0m15:46:30.423603 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:46:30.446480 [debug] [MainThread]: Postgres adapter: Got a retryable error when attempting to open a postgres connection.
+1 attempts remaining. Retrying in 0 seconds.
+Error:
+connection to server at "localhost" (::1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+[0m15:46:30.448856 [debug] [MainThread]: Postgres adapter: Error running SQL: select 1 as id
+[0m15:46:30.449766 [debug] [MainThread]: Postgres adapter: Rolling back transaction.
+[0m15:46:30.450677 [debug] [MainThread]: On debug: No close available on handle
+[0m15:46:30.452116 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m15:46:30.453355 [info ] [MainThread]: [31m1 check failed:[0m
+[0m15:46:30.454260 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  connection to server at "localhost" (::1), port 5432 failed: Connection refused
+  	Is the server running on that host and accepting TCP/IP connections?
+  connection to server at "localhost" (127.0.0.1), port 5432 failed: Connection refused
+  	Is the server running on that host and accepting TCP/IP connections?
+  
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m15:46:30.457679 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 1.2858996, "process_in_blocks": "0", "process_kernel_time": 0.683194, "process_mem_max_rss": "108941312", "process_out_blocks": "0", "process_user_time": 3.210835}
+[0m15:46:30.459106 [debug] [MainThread]: Command `dbt debug` failed at 15:46:30.458816 after 1.29 seconds
+[0m15:46:30.460078 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m15:46:30.461039 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb0980eb820>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb0d049b070>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fb0d04ddcf0>]}
+[0m15:46:30.462178 [debug] [MainThread]: Flushing usage events
+[0m15:46:30.926539 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:57:00.268954 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8b20fc77c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8b21a2e020>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8b21a2d900>]}
+
+
+============================== 15:57:00.277035 | fd0be838-3cf2-42f6-9c4c-43fc91509427 ==============================
+[0m15:57:00.277035 [info ] [MainThread]: Running with dbt=1.9.4
+[0m15:57:00.278023 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': '/Users/truptikirve/GenAI_Projects/DataEngineering/retail_sales_pipeline/dbt_project/logs', 'profiles_dir': '/Users/truptikirve/.dbt', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'empty': 'None', 'quiet': 'False', 'no_print': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'invocation_command': 'dbt seed', 'static_parser': 'True', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m15:57:00.796710 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'fd0be838-3cf2-42f6-9c4c-43fc91509427', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8b2094f280>]}
+[0m15:57:00.900481 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'fd0be838-3cf2-42f6-9c4c-43fc91509427', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8ad065d1e0>]}
+[0m15:57:00.913561 [info ] [MainThread]: Registered adapter: duckdb=1.9.3
+[0m15:57:01.204346 [debug] [MainThread]: checksum: b5597158181700c50f5bc1c71fe28b37a6fb85633dc5323885263678b6bc782c, vars: {}, profile: , target: , version: 1.9.4
+[0m15:57:01.205596 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m15:57:01.206233 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': 'fd0be838-3cf2-42f6-9c4c-43fc91509427', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8ae0b03cd0>]}
+[0m15:57:03.226391 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'fd0be838-3cf2-42f6-9c4c-43fc91509427', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8ad089f790>]}
+[0m15:57:03.361411 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/truptikirve/GenAI_Projects/DataEngineering/retail_sales_pipeline/dbt_project/target/manifest.json
+[0m15:57:03.363831 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/truptikirve/GenAI_Projects/DataEngineering/retail_sales_pipeline/dbt_project/target/semantic_manifest.json
+[0m15:57:03.392737 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': 'fd0be838-3cf2-42f6-9c4c-43fc91509427', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8ad089fa30>]}
+[0m15:57:03.393559 [info ] [MainThread]: Found 4 models, 3 seeds, 428 macros
+[0m15:57:03.394134 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'fd0be838-3cf2-42f6-9c4c-43fc91509427', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8ad08a4dc0>]}
+[0m15:57:03.396306 [info ] [MainThread]: 
+[0m15:57:03.396884 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m15:57:03.397395 [info ] [MainThread]: 
+[0m15:57:03.398164 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m15:57:03.406768 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_retail_sales'
+[0m15:57:03.548403 [debug] [ThreadPool]: Using duckdb connection "list_retail_sales"
+[0m15:57:03.549066 [debug] [ThreadPool]: On list_retail_sales: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "default", "target_name": "dev", "connection_name": "list_retail_sales"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"retail_sales"'
+    
+  
+  
+[0m15:57:03.549692 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:57:03.565948 [debug] [ThreadPool]: SQL status: OK in 0.016 seconds
+[0m15:57:03.567852 [debug] [ThreadPool]: On list_retail_sales: Close
+[0m15:57:03.568876 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_retail_sales, now create_retail_sales_main)
+[0m15:57:03.569819 [debug] [ThreadPool]: Creating schema "database: "retail_sales"
+schema: "main"
+"
+[0m15:57:03.579954 [debug] [ThreadPool]: Using duckdb connection "create_retail_sales_main"
+[0m15:57:03.580513 [debug] [ThreadPool]: On create_retail_sales_main: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "default", "target_name": "dev", "connection_name": "create_retail_sales_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='retail_sales'
+        and type='sqlite'
+    
+  
+[0m15:57:03.581023 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m15:57:03.582104 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m15:57:03.583920 [debug] [ThreadPool]: Using duckdb connection "create_retail_sales_main"
+[0m15:57:03.584443 [debug] [ThreadPool]: On create_retail_sales_main: BEGIN
+[0m15:57:03.585105 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m15:57:03.585624 [debug] [ThreadPool]: Using duckdb connection "create_retail_sales_main"
+[0m15:57:03.586291 [debug] [ThreadPool]: On create_retail_sales_main: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "default", "target_name": "dev", "connection_name": "create_retail_sales_main"} */
+
+    
+    
+        create schema if not exists "retail_sales"."main"
+    
+[0m15:57:03.587096 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m15:57:03.588323 [debug] [ThreadPool]: On create_retail_sales_main: COMMIT
+[0m15:57:03.588850 [debug] [ThreadPool]: Using duckdb connection "create_retail_sales_main"
+[0m15:57:03.589341 [debug] [ThreadPool]: On create_retail_sales_main: COMMIT
+[0m15:57:03.589983 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m15:57:03.590501 [debug] [ThreadPool]: On create_retail_sales_main: Close
+[0m15:57:03.592609 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_retail_sales_main, now list_retail_sales_main)
+[0m15:57:03.601606 [debug] [ThreadPool]: Using duckdb connection "list_retail_sales_main"
+[0m15:57:03.602138 [debug] [ThreadPool]: On list_retail_sales_main: BEGIN
+[0m15:57:03.602624 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m15:57:03.603348 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m15:57:03.603846 [debug] [ThreadPool]: Using duckdb connection "list_retail_sales_main"
+[0m15:57:03.604368 [debug] [ThreadPool]: On list_retail_sales_main: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "default", "target_name": "dev", "connection_name": "list_retail_sales_main"} */
+select
+      'retail_sales' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'retail_sales'
+  
+[0m15:57:03.624508 [debug] [ThreadPool]: SQL status: OK in 0.020 seconds
+[0m15:57:03.626242 [debug] [ThreadPool]: On list_retail_sales_main: ROLLBACK
+[0m15:57:03.627754 [debug] [ThreadPool]: Failed to rollback 'list_retail_sales_main'
+[0m15:57:03.628293 [debug] [ThreadPool]: On list_retail_sales_main: Close
+[0m15:57:03.629178 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'fd0be838-3cf2-42f6-9c4c-43fc91509427', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8b20a088b0>]}
+[0m15:57:03.629929 [debug] [MainThread]: Using duckdb connection "master"
+[0m15:57:03.630442 [debug] [MainThread]: On master: BEGIN
+[0m15:57:03.630929 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:57:03.631654 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m15:57:03.632172 [debug] [MainThread]: On master: COMMIT
+[0m15:57:03.632688 [debug] [MainThread]: Using duckdb connection "master"
+[0m15:57:03.633190 [debug] [MainThread]: On master: COMMIT
+[0m15:57:03.633859 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m15:57:03.634393 [debug] [MainThread]: On master: Close
+[0m15:57:03.638714 [debug] [Thread-1 (]: Began running node seed.retail_sales_pipeline.raw_customers
+[0m15:57:03.639561 [info ] [Thread-1 (]: 1 of 3 START seed file main.raw_customers ...................................... [RUN]
+[0m15:57:03.640322 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_retail_sales_main, now seed.retail_sales_pipeline.raw_customers)
+[0m15:57:03.640930 [debug] [Thread-1 (]: Began compiling node seed.retail_sales_pipeline.raw_customers
+[0m15:57:03.641524 [debug] [Thread-1 (]: Began executing node seed.retail_sales_pipeline.raw_customers
+[0m15:57:03.682986 [debug] [Thread-1 (]: Using duckdb connection "seed.retail_sales_pipeline.raw_customers"
+[0m15:57:03.683902 [debug] [Thread-1 (]: On seed.retail_sales_pipeline.raw_customers: BEGIN
+[0m15:57:03.684809 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:57:03.685871 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:57:03.686501 [debug] [Thread-1 (]: Using duckdb connection "seed.retail_sales_pipeline.raw_customers"
+[0m15:57:03.687125 [debug] [Thread-1 (]: On seed.retail_sales_pipeline.raw_customers: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "default", "target_name": "dev", "node_id": "seed.retail_sales_pipeline.raw_customers"} */
+
+    create table "retail_sales"."main"."raw_customers" ("customer_id" integer,"customer_name" text,"city" text,"region" text)
+  
+[0m15:57:03.688140 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m15:57:03.706710 [debug] [Thread-1 (]: Using duckdb connection "seed.retail_sales_pipeline.raw_customers"
+[0m15:57:03.707479 [debug] [Thread-1 (]: On seed.retail_sales_pipeline.raw_customers: 
+          COPY "retail_sales"."main"."raw_customers" FROM '/Users/truptikirve/GenAI_Projects/DataEngineering/retail_sales_pipeline/dbt_project/seeds/raw_customers.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        ...
+[0m15:57:03.711236 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m15:57:03.720782 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.retail_sales_pipeline.raw_customers"
+[0m15:57:03.743546 [debug] [Thread-1 (]: On seed.retail_sales_pipeline.raw_customers: COMMIT
+[0m15:57:03.744283 [debug] [Thread-1 (]: Using duckdb connection "seed.retail_sales_pipeline.raw_customers"
+[0m15:57:03.744892 [debug] [Thread-1 (]: On seed.retail_sales_pipeline.raw_customers: COMMIT
+[0m15:57:03.746337 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:57:03.749334 [debug] [Thread-1 (]: On seed.retail_sales_pipeline.raw_customers: Close
+[0m15:57:03.752653 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'fd0be838-3cf2-42f6-9c4c-43fc91509427', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8b21d60220>]}
+[0m15:57:03.753647 [info ] [Thread-1 (]: 1 of 3 OK loaded seed file main.raw_customers .................................. [[32mINSERT 4[0m in 0.11s]
+[0m15:57:03.754639 [debug] [Thread-1 (]: Finished running node seed.retail_sales_pipeline.raw_customers
+[0m15:57:03.755310 [debug] [Thread-1 (]: Began running node seed.retail_sales_pipeline.raw_products
+[0m15:57:03.756202 [info ] [Thread-1 (]: 2 of 3 START seed file main.raw_products ....................................... [RUN]
+[0m15:57:03.757070 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.retail_sales_pipeline.raw_customers, now seed.retail_sales_pipeline.raw_products)
+[0m15:57:03.757752 [debug] [Thread-1 (]: Began compiling node seed.retail_sales_pipeline.raw_products
+[0m15:57:03.758388 [debug] [Thread-1 (]: Began executing node seed.retail_sales_pipeline.raw_products
+[0m15:57:03.764817 [debug] [Thread-1 (]: Using duckdb connection "seed.retail_sales_pipeline.raw_products"
+[0m15:57:03.765529 [debug] [Thread-1 (]: On seed.retail_sales_pipeline.raw_products: BEGIN
+[0m15:57:03.766121 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:57:03.767010 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:57:03.767612 [debug] [Thread-1 (]: Using duckdb connection "seed.retail_sales_pipeline.raw_products"
+[0m15:57:03.768208 [debug] [Thread-1 (]: On seed.retail_sales_pipeline.raw_products: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "default", "target_name": "dev", "node_id": "seed.retail_sales_pipeline.raw_products"} */
+
+    create table "retail_sales"."main"."raw_products" ("product_id" integer,"product_name" text,"category" text,"price" float8)
+  
+[0m15:57:03.769218 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m15:57:03.771242 [debug] [Thread-1 (]: Using duckdb connection "seed.retail_sales_pipeline.raw_products"
+[0m15:57:03.771877 [debug] [Thread-1 (]: On seed.retail_sales_pipeline.raw_products: 
+          COPY "retail_sales"."main"."raw_products" FROM '/Users/truptikirve/GenAI_Projects/DataEngineering/retail_sales_pipeline/dbt_project/seeds/raw_products.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        ...
+[0m15:57:03.773649 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:57:03.774632 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.retail_sales_pipeline.raw_products"
+[0m15:57:03.777294 [debug] [Thread-1 (]: On seed.retail_sales_pipeline.raw_products: COMMIT
+[0m15:57:03.777905 [debug] [Thread-1 (]: Using duckdb connection "seed.retail_sales_pipeline.raw_products"
+[0m15:57:03.778476 [debug] [Thread-1 (]: On seed.retail_sales_pipeline.raw_products: COMMIT
+[0m15:57:03.779528 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m15:57:03.780723 [debug] [Thread-1 (]: On seed.retail_sales_pipeline.raw_products: Close
+[0m15:57:03.781831 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'fd0be838-3cf2-42f6-9c4c-43fc91509427', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8ad06d2530>]}
+[0m15:57:03.782837 [info ] [Thread-1 (]: 2 of 3 OK loaded seed file main.raw_products ................................... [[32mINSERT 4[0m in 0.02s]
+[0m15:57:03.784160 [debug] [Thread-1 (]: Finished running node seed.retail_sales_pipeline.raw_products
+[0m15:57:03.784883 [debug] [Thread-1 (]: Began running node seed.retail_sales_pipeline.raw_sales_data
+[0m15:57:03.785773 [info ] [Thread-1 (]: 3 of 3 START seed file main.raw_sales_data ..................................... [RUN]
+[0m15:57:03.786540 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly seed.retail_sales_pipeline.raw_products, now seed.retail_sales_pipeline.raw_sales_data)
+[0m15:57:03.787142 [debug] [Thread-1 (]: Began compiling node seed.retail_sales_pipeline.raw_sales_data
+[0m15:57:03.787726 [debug] [Thread-1 (]: Began executing node seed.retail_sales_pipeline.raw_sales_data
+[0m15:57:03.793972 [debug] [Thread-1 (]: Using duckdb connection "seed.retail_sales_pipeline.raw_sales_data"
+[0m15:57:03.794673 [debug] [Thread-1 (]: On seed.retail_sales_pipeline.raw_sales_data: BEGIN
+[0m15:57:03.795253 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:57:03.796245 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:57:03.796883 [debug] [Thread-1 (]: Using duckdb connection "seed.retail_sales_pipeline.raw_sales_data"
+[0m15:57:03.797492 [debug] [Thread-1 (]: On seed.retail_sales_pipeline.raw_sales_data: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "default", "target_name": "dev", "node_id": "seed.retail_sales_pipeline.raw_sales_data"} */
+
+    create table "retail_sales"."main"."raw_sales_data" ("order_id" integer,"customer_name" text,"product_name" text,"category" text,"order_date" date,"amount" float8)
+  
+[0m15:57:03.798437 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m15:57:03.800574 [debug] [Thread-1 (]: Using duckdb connection "seed.retail_sales_pipeline.raw_sales_data"
+[0m15:57:03.801549 [debug] [Thread-1 (]: On seed.retail_sales_pipeline.raw_sales_data: 
+          COPY "retail_sales"."main"."raw_sales_data" FROM '/Users/truptikirve/GenAI_Projects/DataEngineering/retail_sales_pipeline/dbt_project/seeds/raw_sales_data.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        ...
+[0m15:57:03.803778 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:57:03.805018 [debug] [Thread-1 (]: Writing runtime SQL for node "seed.retail_sales_pipeline.raw_sales_data"
+[0m15:57:03.807922 [debug] [Thread-1 (]: On seed.retail_sales_pipeline.raw_sales_data: COMMIT
+[0m15:57:03.808613 [debug] [Thread-1 (]: Using duckdb connection "seed.retail_sales_pipeline.raw_sales_data"
+[0m15:57:03.809212 [debug] [Thread-1 (]: On seed.retail_sales_pipeline.raw_sales_data: COMMIT
+[0m15:57:03.810395 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:57:03.811687 [debug] [Thread-1 (]: On seed.retail_sales_pipeline.raw_sales_data: Close
+[0m15:57:03.812604 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': 'fd0be838-3cf2-42f6-9c4c-43fc91509427', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8b21d0b5b0>]}
+[0m15:57:03.813530 [info ] [Thread-1 (]: 3 of 3 OK loaded seed file main.raw_sales_data ................................. [[32mINSERT 1[0m in 0.03s]
+[0m15:57:03.814571 [debug] [Thread-1 (]: Finished running node seed.retail_sales_pipeline.raw_sales_data
+[0m15:57:03.816341 [debug] [MainThread]: Using duckdb connection "master"
+[0m15:57:03.816954 [debug] [MainThread]: On master: BEGIN
+[0m15:57:03.817469 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m15:57:03.818428 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m15:57:03.819085 [debug] [MainThread]: On master: COMMIT
+[0m15:57:03.819863 [debug] [MainThread]: Using duckdb connection "master"
+[0m15:57:03.820577 [debug] [MainThread]: On master: COMMIT
+[0m15:57:03.821535 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m15:57:03.822120 [debug] [MainThread]: On master: Close
+[0m15:57:03.822808 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:57:03.823300 [debug] [MainThread]: Connection 'seed.retail_sales_pipeline.raw_sales_data' was properly closed.
+[0m15:57:03.823867 [info ] [MainThread]: 
+[0m15:57:03.824432 [info ] [MainThread]: Finished running 3 seeds in 0 hours 0 minutes and 0.43 seconds (0.43s).
+[0m15:57:03.826055 [debug] [MainThread]: Command end result
+[0m15:57:03.866731 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/truptikirve/GenAI_Projects/DataEngineering/retail_sales_pipeline/dbt_project/target/manifest.json
+[0m15:57:03.869156 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/truptikirve/GenAI_Projects/DataEngineering/retail_sales_pipeline/dbt_project/target/semantic_manifest.json
+[0m15:57:03.879466 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/truptikirve/GenAI_Projects/DataEngineering/retail_sales_pipeline/dbt_project/target/run_results.json
+[0m15:57:03.880069 [info ] [MainThread]: 
+[0m15:57:03.880737 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m15:57:03.881268 [info ] [MainThread]: 
+[0m15:57:03.881834 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=0 SKIP=0 TOTAL=3
+[0m15:57:03.884355 [debug] [MainThread]: Resource report: {"command_name": "seed", "command_success": true, "command_wall_clock_time": 3.7538562, "process_in_blocks": "0", "process_kernel_time": 0.809515, "process_mem_max_rss": "140640256", "process_out_blocks": "0", "process_user_time": 5.592738}
+[0m15:57:03.885347 [debug] [MainThread]: Command `dbt seed` succeeded at 15:57:03.885169 after 3.76 seconds
+[0m15:57:03.885997 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8b20fc77c0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8ad065d1e0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7f8b21011a50>]}
+[0m15:57:03.886654 [debug] [MainThread]: Flushing usage events
+[0m15:57:04.096286 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:57:12.608464 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff4103b37f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff3f8b36050>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff3f8b35930>]}
+
+
+============================== 15:57:12.614745 | 4d8f3145-3cf0-4b46-a19b-fa1f340e0837 ==============================
+[0m15:57:12.614745 [info ] [MainThread]: Running with dbt=1.9.4
+[0m15:57:12.615911 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'profiles_dir': '/Users/truptikirve/.dbt', 'fail_fast': 'False', 'warn_error': 'None', 'log_path': '/Users/truptikirve/GenAI_Projects/DataEngineering/retail_sales_pipeline/dbt_project/logs', 'version_check': 'True', 'debug': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'invocation_command': 'dbt run', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'target_path': 'None', 'static_parser': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m15:57:13.111680 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '4d8f3145-3cf0-4b46-a19b-fa1f340e0837', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff3f0939750>]}
+[0m15:57:13.208218 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '4d8f3145-3cf0-4b46-a19b-fa1f340e0837', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff3f0939210>]}
+[0m15:57:13.220859 [info ] [MainThread]: Registered adapter: duckdb=1.9.3
+[0m15:57:13.480660 [debug] [MainThread]: checksum: b5597158181700c50f5bc1c71fe28b37a6fb85633dc5323885263678b6bc782c, vars: {}, profile: , target: , version: 1.9.4
+[0m15:57:13.668164 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m15:57:13.668800 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m15:57:13.741039 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '4d8f3145-3cf0-4b46-a19b-fa1f340e0837', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff3f8c20130>]}
+[0m15:57:13.932084 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/truptikirve/GenAI_Projects/DataEngineering/retail_sales_pipeline/dbt_project/target/manifest.json
+[0m15:57:13.936607 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/truptikirve/GenAI_Projects/DataEngineering/retail_sales_pipeline/dbt_project/target/semantic_manifest.json
+[0m15:57:13.956085 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '4d8f3145-3cf0-4b46-a19b-fa1f340e0837', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff3f09b0880>]}
+[0m15:57:13.957067 [info ] [MainThread]: Found 4 models, 3 seeds, 428 macros
+[0m15:57:13.957801 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '4d8f3145-3cf0-4b46-a19b-fa1f340e0837', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff3f09b1960>]}
+[0m15:57:13.960291 [info ] [MainThread]: 
+[0m15:57:13.960999 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m15:57:13.961514 [info ] [MainThread]: 
+[0m15:57:13.962387 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m15:57:13.971394 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_retail_sales'
+[0m15:57:14.063712 [debug] [ThreadPool]: Using duckdb connection "list_retail_sales"
+[0m15:57:14.064379 [debug] [ThreadPool]: On list_retail_sales: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "default", "target_name": "dev", "connection_name": "list_retail_sales"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"retail_sales"'
+    
+  
+  
+[0m15:57:14.064911 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:57:14.083561 [debug] [ThreadPool]: SQL status: OK in 0.019 seconds
+[0m15:57:14.086137 [debug] [ThreadPool]: On list_retail_sales: Close
+[0m15:57:14.087619 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_retail_sales, now create_retail_sales_main)
+[0m15:57:14.088450 [debug] [ThreadPool]: Creating schema "database: "retail_sales"
+schema: "main"
+"
+[0m15:57:14.099653 [debug] [ThreadPool]: Using duckdb connection "create_retail_sales_main"
+[0m15:57:14.100503 [debug] [ThreadPool]: On create_retail_sales_main: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "default", "target_name": "dev", "connection_name": "create_retail_sales_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='retail_sales'
+        and type='sqlite'
+    
+  
+[0m15:57:14.101574 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m15:57:14.103247 [debug] [ThreadPool]: SQL status: OK in 0.002 seconds
+[0m15:57:14.105385 [debug] [ThreadPool]: Using duckdb connection "create_retail_sales_main"
+[0m15:57:14.105929 [debug] [ThreadPool]: On create_retail_sales_main: BEGIN
+[0m15:57:14.106649 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m15:57:14.107151 [debug] [ThreadPool]: Using duckdb connection "create_retail_sales_main"
+[0m15:57:14.107653 [debug] [ThreadPool]: On create_retail_sales_main: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "default", "target_name": "dev", "connection_name": "create_retail_sales_main"} */
+
+    
+    
+        create schema if not exists "retail_sales"."main"
+    
+[0m15:57:14.108488 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m15:57:14.109849 [debug] [ThreadPool]: On create_retail_sales_main: COMMIT
+[0m15:57:14.110410 [debug] [ThreadPool]: Using duckdb connection "create_retail_sales_main"
+[0m15:57:14.110925 [debug] [ThreadPool]: On create_retail_sales_main: COMMIT
+[0m15:57:14.111653 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m15:57:14.112191 [debug] [ThreadPool]: On create_retail_sales_main: Close
+[0m15:57:14.114578 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_retail_sales_main, now list_retail_sales_main)
+[0m15:57:14.124823 [debug] [ThreadPool]: Using duckdb connection "list_retail_sales_main"
+[0m15:57:14.125557 [debug] [ThreadPool]: On list_retail_sales_main: BEGIN
+[0m15:57:14.126061 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m15:57:14.126943 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m15:57:14.127485 [debug] [ThreadPool]: Using duckdb connection "list_retail_sales_main"
+[0m15:57:14.128026 [debug] [ThreadPool]: On list_retail_sales_main: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "default", "target_name": "dev", "connection_name": "list_retail_sales_main"} */
+select
+      'retail_sales' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'retail_sales'
+  
+[0m15:57:14.150191 [debug] [ThreadPool]: SQL status: OK in 0.022 seconds
+[0m15:57:14.152240 [debug] [ThreadPool]: On list_retail_sales_main: ROLLBACK
+[0m15:57:14.153132 [debug] [ThreadPool]: Failed to rollback 'list_retail_sales_main'
+[0m15:57:14.153659 [debug] [ThreadPool]: On list_retail_sales_main: Close
+[0m15:57:14.155481 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '4d8f3145-3cf0-4b46-a19b-fa1f340e0837', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff3f0344910>]}
+[0m15:57:14.156273 [debug] [MainThread]: Using duckdb connection "master"
+[0m15:57:14.156804 [debug] [MainThread]: On master: BEGIN
+[0m15:57:14.157309 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:57:14.158126 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m15:57:14.158669 [debug] [MainThread]: On master: COMMIT
+[0m15:57:14.159208 [debug] [MainThread]: Using duckdb connection "master"
+[0m15:57:14.159725 [debug] [MainThread]: On master: COMMIT
+[0m15:57:14.160437 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m15:57:14.160984 [debug] [MainThread]: On master: Close
+[0m15:57:14.163936 [debug] [Thread-1 (]: Began running node model.retail_sales_pipeline.fct_sales
+[0m15:57:14.164798 [info ] [Thread-1 (]: 1 of 4 START sql table model main.fct_sales .................................... [RUN]
+[0m15:57:14.165562 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_retail_sales_main, now model.retail_sales_pipeline.fct_sales)
+[0m15:57:14.166239 [debug] [Thread-1 (]: Began compiling node model.retail_sales_pipeline.fct_sales
+[0m15:57:14.178702 [debug] [Thread-1 (]: Writing injected SQL for node "model.retail_sales_pipeline.fct_sales"
+[0m15:57:14.180246 [debug] [Thread-1 (]: Began executing node model.retail_sales_pipeline.fct_sales
+[0m15:57:14.298187 [debug] [Thread-1 (]: Writing runtime sql for node "model.retail_sales_pipeline.fct_sales"
+[0m15:57:14.299898 [debug] [Thread-1 (]: Using duckdb connection "model.retail_sales_pipeline.fct_sales"
+[0m15:57:14.300581 [debug] [Thread-1 (]: On model.retail_sales_pipeline.fct_sales: BEGIN
+[0m15:57:14.301714 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:57:14.303149 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m15:57:14.304026 [debug] [Thread-1 (]: Using duckdb connection "model.retail_sales_pipeline.fct_sales"
+[0m15:57:14.305197 [debug] [Thread-1 (]: On model.retail_sales_pipeline.fct_sales: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "default", "target_name": "dev", "node_id": "model.retail_sales_pipeline.fct_sales"} */
+
+  
+    
+    
+
+    create  table
+      "retail_sales"."main"."fct_sales__dbt_tmp"
+  
+    as (
+      WITH orders AS (
+    SELECT * FROM stg_orders
+),
+    customers AS (
+    SELECT * FROM stg_customers
+    ),
+    products AS (
+    SELECT * FROM stg_products
+    )
+
+SELECT
+    o.order_id,
+    o.order_date,
+    c.customer_name,
+    c.city,
+    c.region,
+    p.product_name,
+    p.category,
+    p.price,
+    o.amount
+FROM orders o
+LEFT JOIN customers c ON o.customer_name = c.customer_name
+LEFT JOIN products p ON o.product_name = p.product_name
+    );
+  
+  
+[0m15:57:14.310199 [debug] [Thread-1 (]: DuckDB adapter: Error running SQL: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "default", "target_name": "dev", "node_id": "model.retail_sales_pipeline.fct_sales"} */
+
+  
+    
+    
+
+    create  table
+      "retail_sales"."main"."fct_sales__dbt_tmp"
+  
+    as (
+      WITH orders AS (
+    SELECT * FROM stg_orders
+),
+    customers AS (
+    SELECT * FROM stg_customers
+    ),
+    products AS (
+    SELECT * FROM stg_products
+    )
+
+SELECT
+    o.order_id,
+    o.order_date,
+    c.customer_name,
+    c.city,
+    c.region,
+    p.product_name,
+    p.category,
+    p.price,
+    o.amount
+FROM orders o
+LEFT JOIN customers c ON o.customer_name = c.customer_name
+LEFT JOIN products p ON o.product_name = p.product_name
+    );
+  
+  
+[0m15:57:14.310994 [debug] [Thread-1 (]: DuckDB adapter: Rolling back transaction.
+[0m15:57:14.311783 [debug] [Thread-1 (]: On model.retail_sales_pipeline.fct_sales: ROLLBACK
+[0m15:57:14.324382 [debug] [Thread-1 (]: Failed to rollback 'model.retail_sales_pipeline.fct_sales'
+[0m15:57:14.325132 [debug] [Thread-1 (]: On model.retail_sales_pipeline.fct_sales: Close
+[0m15:57:14.326780 [debug] [Thread-1 (]: Runtime Error in model fct_sales (models/marts/fct_sales.sql)
+  Catalog Error: Table with name stg_orders does not exist!
+  Did you mean "pg_attrdef"?
+  
+  LINE 12:     SELECT * FROM stg_orders
+                             ^
+[0m15:57:14.329638 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '4d8f3145-3cf0-4b46-a19b-fa1f340e0837', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff3f0ac61a0>]}
+[0m15:57:14.330780 [error] [Thread-1 (]: 1 of 4 ERROR creating sql table model main.fct_sales ........................... [[31mERROR[0m in 0.16s]
+[0m15:57:14.331975 [debug] [Thread-1 (]: Finished running node model.retail_sales_pipeline.fct_sales
+[0m15:57:14.332668 [debug] [Thread-1 (]: Began running node model.retail_sales_pipeline.stg_customers
+[0m15:57:14.333562 [info ] [Thread-1 (]: 2 of 4 START sql view model main.stg_customers ................................. [RUN]
+[0m15:57:14.335216 [debug] [Thread-4 (]: Marking all children of 'model.retail_sales_pipeline.fct_sales' to be skipped because of status 'error'.  Reason: Runtime Error in model fct_sales (models/marts/fct_sales.sql)
+  Catalog Error: Table with name stg_orders does not exist!
+  Did you mean "pg_attrdef"?
+  
+  LINE 12:     SELECT * FROM stg_orders
+                             ^.
+[0m15:57:14.336301 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.retail_sales_pipeline.fct_sales, now model.retail_sales_pipeline.stg_customers)
+[0m15:57:14.337597 [debug] [Thread-1 (]: Began compiling node model.retail_sales_pipeline.stg_customers
+[0m15:57:14.341967 [debug] [Thread-1 (]: Writing injected SQL for node "model.retail_sales_pipeline.stg_customers"
+[0m15:57:14.343531 [debug] [Thread-1 (]: Began executing node model.retail_sales_pipeline.stg_customers
+[0m15:57:14.379930 [debug] [Thread-1 (]: Writing runtime sql for node "model.retail_sales_pipeline.stg_customers"
+[0m15:57:14.381417 [debug] [Thread-1 (]: Using duckdb connection "model.retail_sales_pipeline.stg_customers"
+[0m15:57:14.382299 [debug] [Thread-1 (]: On model.retail_sales_pipeline.stg_customers: BEGIN
+[0m15:57:14.382913 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:57:14.384162 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:57:14.385361 [debug] [Thread-1 (]: Using duckdb connection "model.retail_sales_pipeline.stg_customers"
+[0m15:57:14.386435 [debug] [Thread-1 (]: On model.retail_sales_pipeline.stg_customers: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "default", "target_name": "dev", "node_id": "model.retail_sales_pipeline.stg_customers"} */
+
+  
+  create view "retail_sales"."main"."stg_customers__dbt_tmp" as (
+    SELECT
+    customer_id,
+    customer_name,
+    city,
+    region
+FROM raw_customers
+  );
+
+[0m15:57:14.387781 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m15:57:14.401748 [debug] [Thread-1 (]: Using duckdb connection "model.retail_sales_pipeline.stg_customers"
+[0m15:57:14.402909 [debug] [Thread-1 (]: On model.retail_sales_pipeline.stg_customers: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "default", "target_name": "dev", "node_id": "model.retail_sales_pipeline.stg_customers"} */
+alter view "retail_sales"."main"."stg_customers__dbt_tmp" rename to "stg_customers"
+[0m15:57:14.404545 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m15:57:14.425607 [debug] [Thread-1 (]: On model.retail_sales_pipeline.stg_customers: COMMIT
+[0m15:57:14.426406 [debug] [Thread-1 (]: Using duckdb connection "model.retail_sales_pipeline.stg_customers"
+[0m15:57:14.427041 [debug] [Thread-1 (]: On model.retail_sales_pipeline.stg_customers: COMMIT
+[0m15:57:14.428510 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:57:14.437052 [debug] [Thread-1 (]: Using duckdb connection "model.retail_sales_pipeline.stg_customers"
+[0m15:57:14.437793 [debug] [Thread-1 (]: On model.retail_sales_pipeline.stg_customers: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "default", "target_name": "dev", "node_id": "model.retail_sales_pipeline.stg_customers"} */
+drop view if exists "retail_sales"."main"."stg_customers__dbt_backup" cascade
+[0m15:57:14.438961 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m15:57:14.445867 [debug] [Thread-1 (]: On model.retail_sales_pipeline.stg_customers: Close
+[0m15:57:14.447405 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '4d8f3145-3cf0-4b46-a19b-fa1f340e0837', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff3d0a9ff70>]}
+[0m15:57:14.448678 [info ] [Thread-1 (]: 2 of 4 OK created sql view model main.stg_customers ............................ [[32mOK[0m in 0.11s]
+[0m15:57:14.450196 [debug] [Thread-1 (]: Finished running node model.retail_sales_pipeline.stg_customers
+[0m15:57:14.451011 [debug] [Thread-1 (]: Began running node model.retail_sales_pipeline.stg_orders
+[0m15:57:14.452063 [info ] [Thread-1 (]: 3 of 4 START sql view model main.stg_orders .................................... [RUN]
+[0m15:57:14.453202 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.retail_sales_pipeline.stg_customers, now model.retail_sales_pipeline.stg_orders)
+[0m15:57:14.453949 [debug] [Thread-1 (]: Began compiling node model.retail_sales_pipeline.stg_orders
+[0m15:57:14.461227 [debug] [Thread-1 (]: Writing injected SQL for node "model.retail_sales_pipeline.stg_orders"
+[0m15:57:14.462895 [debug] [Thread-1 (]: Began executing node model.retail_sales_pipeline.stg_orders
+[0m15:57:14.473488 [debug] [Thread-1 (]: Writing runtime sql for node "model.retail_sales_pipeline.stg_orders"
+[0m15:57:14.475294 [debug] [Thread-1 (]: Using duckdb connection "model.retail_sales_pipeline.stg_orders"
+[0m15:57:14.476536 [debug] [Thread-1 (]: On model.retail_sales_pipeline.stg_orders: BEGIN
+[0m15:57:14.477435 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:57:14.478834 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:57:14.480065 [debug] [Thread-1 (]: Using duckdb connection "model.retail_sales_pipeline.stg_orders"
+[0m15:57:14.481354 [debug] [Thread-1 (]: On model.retail_sales_pipeline.stg_orders: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "default", "target_name": "dev", "node_id": "model.retail_sales_pipeline.stg_orders"} */
+
+  
+  create view "retail_sales"."main"."stg_orders__dbt_tmp" as (
+    SELECT
+    order_id,
+    customer_name,
+    product_name,
+    category,
+    order_date,
+    amount
+FROM "retail_sales"."main"."raw_sales_data"
+  );
+
+[0m15:57:14.483767 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:57:14.492365 [debug] [Thread-1 (]: Using duckdb connection "model.retail_sales_pipeline.stg_orders"
+[0m15:57:14.493752 [debug] [Thread-1 (]: On model.retail_sales_pipeline.stg_orders: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "default", "target_name": "dev", "node_id": "model.retail_sales_pipeline.stg_orders"} */
+alter view "retail_sales"."main"."stg_orders__dbt_tmp" rename to "stg_orders"
+[0m15:57:14.495267 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m15:57:14.498647 [debug] [Thread-1 (]: On model.retail_sales_pipeline.stg_orders: COMMIT
+[0m15:57:14.499589 [debug] [Thread-1 (]: Using duckdb connection "model.retail_sales_pipeline.stg_orders"
+[0m15:57:14.500662 [debug] [Thread-1 (]: On model.retail_sales_pipeline.stg_orders: COMMIT
+[0m15:57:14.501944 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:57:14.505732 [debug] [Thread-1 (]: Using duckdb connection "model.retail_sales_pipeline.stg_orders"
+[0m15:57:14.506357 [debug] [Thread-1 (]: On model.retail_sales_pipeline.stg_orders: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "default", "target_name": "dev", "node_id": "model.retail_sales_pipeline.stg_orders"} */
+drop view if exists "retail_sales"."main"."stg_orders__dbt_backup" cascade
+[0m15:57:14.507225 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m15:57:14.509572 [debug] [Thread-1 (]: On model.retail_sales_pipeline.stg_orders: Close
+[0m15:57:14.510536 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '4d8f3145-3cf0-4b46-a19b-fa1f340e0837', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff3f028fb80>]}
+[0m15:57:14.511567 [info ] [Thread-1 (]: 3 of 4 OK created sql view model main.stg_orders ............................... [[32mOK[0m in 0.06s]
+[0m15:57:14.512544 [debug] [Thread-1 (]: Finished running node model.retail_sales_pipeline.stg_orders
+[0m15:57:14.513218 [debug] [Thread-1 (]: Began running node model.retail_sales_pipeline.stg_products
+[0m15:57:14.514102 [info ] [Thread-1 (]: 4 of 4 START sql view model main.stg_products .................................. [RUN]
+[0m15:57:14.515056 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.retail_sales_pipeline.stg_orders, now model.retail_sales_pipeline.stg_products)
+[0m15:57:14.515752 [debug] [Thread-1 (]: Began compiling node model.retail_sales_pipeline.stg_products
+[0m15:57:14.520833 [debug] [Thread-1 (]: Writing injected SQL for node "model.retail_sales_pipeline.stg_products"
+[0m15:57:14.521972 [debug] [Thread-1 (]: Began executing node model.retail_sales_pipeline.stg_products
+[0m15:57:14.528504 [debug] [Thread-1 (]: Writing runtime sql for node "model.retail_sales_pipeline.stg_products"
+[0m15:57:14.529807 [debug] [Thread-1 (]: Using duckdb connection "model.retail_sales_pipeline.stg_products"
+[0m15:57:14.530495 [debug] [Thread-1 (]: On model.retail_sales_pipeline.stg_products: BEGIN
+[0m15:57:14.531416 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:57:14.532827 [debug] [Thread-1 (]: SQL status: OK in 0.002 seconds
+[0m15:57:14.533507 [debug] [Thread-1 (]: Using duckdb connection "model.retail_sales_pipeline.stg_products"
+[0m15:57:14.534570 [debug] [Thread-1 (]: On model.retail_sales_pipeline.stg_products: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "default", "target_name": "dev", "node_id": "model.retail_sales_pipeline.stg_products"} */
+
+  
+  create view "retail_sales"."main"."stg_products__dbt_tmp" as (
+    SELECT
+    product_id,
+    product_name,
+    category,
+    price
+FROM "retail_sales"."main"."raw_products"
+  );
+
+[0m15:57:14.535879 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m15:57:14.542594 [debug] [Thread-1 (]: Using duckdb connection "model.retail_sales_pipeline.stg_products"
+[0m15:57:14.543931 [debug] [Thread-1 (]: On model.retail_sales_pipeline.stg_products: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "default", "target_name": "dev", "node_id": "model.retail_sales_pipeline.stg_products"} */
+alter view "retail_sales"."main"."stg_products__dbt_tmp" rename to "stg_products"
+[0m15:57:14.545027 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m15:57:14.547777 [debug] [Thread-1 (]: On model.retail_sales_pipeline.stg_products: COMMIT
+[0m15:57:14.548951 [debug] [Thread-1 (]: Using duckdb connection "model.retail_sales_pipeline.stg_products"
+[0m15:57:14.549641 [debug] [Thread-1 (]: On model.retail_sales_pipeline.stg_products: COMMIT
+[0m15:57:14.550838 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:57:14.558361 [debug] [Thread-1 (]: Using duckdb connection "model.retail_sales_pipeline.stg_products"
+[0m15:57:14.559282 [debug] [Thread-1 (]: On model.retail_sales_pipeline.stg_products: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "default", "target_name": "dev", "node_id": "model.retail_sales_pipeline.stg_products"} */
+drop view if exists "retail_sales"."main"."stg_products__dbt_backup" cascade
+[0m15:57:14.560272 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m15:57:14.562374 [debug] [Thread-1 (]: On model.retail_sales_pipeline.stg_products: Close
+[0m15:57:14.563498 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '4d8f3145-3cf0-4b46-a19b-fa1f340e0837', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff4106bfbb0>]}
+[0m15:57:14.564917 [info ] [Thread-1 (]: 4 of 4 OK created sql view model main.stg_products ............................. [[32mOK[0m in 0.05s]
+[0m15:57:14.566098 [debug] [Thread-1 (]: Finished running node model.retail_sales_pipeline.stg_products
+[0m15:57:14.568134 [debug] [MainThread]: Using duckdb connection "master"
+[0m15:57:14.569032 [debug] [MainThread]: On master: BEGIN
+[0m15:57:14.569692 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m15:57:14.570536 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m15:57:14.571066 [debug] [MainThread]: On master: COMMIT
+[0m15:57:14.571593 [debug] [MainThread]: Using duckdb connection "master"
+[0m15:57:14.572098 [debug] [MainThread]: On master: COMMIT
+[0m15:57:14.572762 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m15:57:14.573485 [debug] [MainThread]: On master: Close
+[0m15:57:14.574177 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:57:14.574676 [debug] [MainThread]: Connection 'model.retail_sales_pipeline.stg_products' was properly closed.
+[0m15:57:14.575497 [info ] [MainThread]: 
+[0m15:57:14.576097 [info ] [MainThread]: Finished running 1 table model, 3 view models in 0 hours 0 minutes and 0.61 seconds (0.61s).
+[0m15:57:14.578116 [debug] [MainThread]: Command end result
+[0m15:57:14.626231 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/truptikirve/GenAI_Projects/DataEngineering/retail_sales_pipeline/dbt_project/target/manifest.json
+[0m15:57:14.628945 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/truptikirve/GenAI_Projects/DataEngineering/retail_sales_pipeline/dbt_project/target/semantic_manifest.json
+[0m15:57:14.641181 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/truptikirve/GenAI_Projects/DataEngineering/retail_sales_pipeline/dbt_project/target/run_results.json
+[0m15:57:14.641801 [info ] [MainThread]: 
+[0m15:57:14.642433 [info ] [MainThread]: [31mCompleted with 1 error, 0 partial successes, and 0 warnings:[0m
+[0m15:57:14.643004 [info ] [MainThread]: 
+[0m15:57:14.643673 [error] [MainThread]:   Runtime Error in model fct_sales (models/marts/fct_sales.sql)
+  Catalog Error: Table with name stg_orders does not exist!
+  Did you mean "pg_attrdef"?
+  
+  LINE 12:     SELECT * FROM stg_orders
+                             ^
+[0m15:57:14.644242 [info ] [MainThread]: 
+[0m15:57:14.644829 [info ] [MainThread]: Done. PASS=3 WARN=0 ERROR=1 SKIP=0 TOTAL=4
+[0m15:57:14.646964 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": false, "command_wall_clock_time": 2.1631851, "process_in_blocks": "0", "process_kernel_time": 0.722129, "process_mem_max_rss": "130932736", "process_out_blocks": "0", "process_user_time": 4.296256}
+[0m15:57:14.647879 [debug] [MainThread]: Command `dbt run` failed at 15:57:14.647686 after 2.16 seconds
+[0m15:57:14.648754 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff4103b37f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff3f0939750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff3f861aef0>]}
+[0m15:57:14.649438 [debug] [MainThread]: Flushing usage events
+[0m15:57:14.905100 [debug] [MainThread]: An error was encountered while trying to flush usage events

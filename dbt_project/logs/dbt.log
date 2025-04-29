@@ -795,3 +795,334 @@ drop view if exists "retail_sales"."main"."stg_products__dbt_backup" cascade
 [0m15:57:14.648754 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff4103b37f0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff3f0939750>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7ff3f861aef0>]}
 [0m15:57:14.649438 [debug] [MainThread]: Flushing usage events
 [0m15:57:14.905100 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m15:59:30.883092 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe3e84ef700>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe36842df60>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe36842d840>]}
+
+
+============================== 15:59:30.905487 | 80656be8-95bb-4b65-91fb-572e34c2869e ==============================
+[0m15:59:30.905487 [info ] [MainThread]: Running with dbt=1.9.4
+[0m15:59:30.906444 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'debug': 'False', 'log_path': '/Users/truptikirve/GenAI_Projects/DataEngineering/retail_sales_pipeline/dbt_project/logs', 'fail_fast': 'False', 'profiles_dir': '/Users/truptikirve/.dbt', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'False', 'log_format': 'default', 'invocation_command': 'dbt run', 'static_parser': 'True', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'target_path': 'None', 'introspect': 'True', 'send_anonymous_usage_stats': 'True'}
+[0m15:59:31.421634 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '80656be8-95bb-4b65-91fb-572e34c2869e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe388381c30>]}
+[0m15:59:31.536425 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '80656be8-95bb-4b65-91fb-572e34c2869e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe3d8593c40>]}
+[0m15:59:31.549699 [info ] [MainThread]: Registered adapter: duckdb=1.9.3
+[0m15:59:31.824584 [debug] [MainThread]: checksum: b5597158181700c50f5bc1c71fe28b37a6fb85633dc5323885263678b6bc782c, vars: {}, profile: , target: , version: 1.9.4
+[0m15:59:32.015242 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 2 files changed.
+[0m15:59:32.016270 [debug] [MainThread]: Partial parsing: updated file: retail_sales_pipeline://models/staging/stg_customers.sql
+[0m15:59:32.016979 [debug] [MainThread]: Partial parsing: updated file: retail_sales_pipeline://models/marts/fct_sales.sql
+[0m15:59:32.464602 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '80656be8-95bb-4b65-91fb-572e34c2869e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe3c869d600>]}
+[0m15:59:32.591041 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/truptikirve/GenAI_Projects/DataEngineering/retail_sales_pipeline/dbt_project/target/manifest.json
+[0m15:59:32.593652 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/truptikirve/GenAI_Projects/DataEngineering/retail_sales_pipeline/dbt_project/target/semantic_manifest.json
+[0m15:59:32.612461 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '80656be8-95bb-4b65-91fb-572e34c2869e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe3c869f790>]}
+[0m15:59:32.613284 [info ] [MainThread]: Found 4 models, 3 seeds, 428 macros
+[0m15:59:32.613874 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '80656be8-95bb-4b65-91fb-572e34c2869e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe3c859c970>]}
+[0m15:59:32.616530 [info ] [MainThread]: 
+[0m15:59:32.617507 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m15:59:32.618070 [info ] [MainThread]: 
+[0m15:59:32.618929 [debug] [MainThread]: Acquiring new duckdb connection 'master'
+[0m15:59:32.629401 [debug] [ThreadPool]: Acquiring new duckdb connection 'list_retail_sales'
+[0m15:59:32.794408 [debug] [ThreadPool]: Using duckdb connection "list_retail_sales"
+[0m15:59:32.795127 [debug] [ThreadPool]: On list_retail_sales: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "default", "target_name": "dev", "connection_name": "list_retail_sales"} */
+
+    
+    select schema_name
+    from system.information_schema.schemata
+    
+    where lower(catalog_name) = '"retail_sales"'
+    
+  
+  
+[0m15:59:32.795760 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m15:59:32.811925 [debug] [ThreadPool]: SQL status: OK in 0.016 seconds
+[0m15:59:32.813889 [debug] [ThreadPool]: On list_retail_sales: Close
+[0m15:59:32.814953 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly list_retail_sales, now create_retail_sales_main)
+[0m15:59:32.815707 [debug] [ThreadPool]: Creating schema "database: "retail_sales"
+schema: "main"
+"
+[0m15:59:32.825934 [debug] [ThreadPool]: Using duckdb connection "create_retail_sales_main"
+[0m15:59:32.826584 [debug] [ThreadPool]: On create_retail_sales_main: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "default", "target_name": "dev", "connection_name": "create_retail_sales_main"} */
+
+    
+        select type from duckdb_databases()
+        where lower(database_name)='retail_sales'
+        and type='sqlite'
+    
+  
+[0m15:59:32.827113 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m15:59:32.828275 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m15:59:32.830144 [debug] [ThreadPool]: Using duckdb connection "create_retail_sales_main"
+[0m15:59:32.830673 [debug] [ThreadPool]: On create_retail_sales_main: BEGIN
+[0m15:59:32.831403 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m15:59:32.831923 [debug] [ThreadPool]: Using duckdb connection "create_retail_sales_main"
+[0m15:59:32.832442 [debug] [ThreadPool]: On create_retail_sales_main: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "default", "target_name": "dev", "connection_name": "create_retail_sales_main"} */
+
+    
+    
+        create schema if not exists "retail_sales"."main"
+    
+[0m15:59:32.833266 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m15:59:32.834542 [debug] [ThreadPool]: On create_retail_sales_main: COMMIT
+[0m15:59:32.835097 [debug] [ThreadPool]: Using duckdb connection "create_retail_sales_main"
+[0m15:59:32.835609 [debug] [ThreadPool]: On create_retail_sales_main: COMMIT
+[0m15:59:32.836287 [debug] [ThreadPool]: SQL status: OK in 0.000 seconds
+[0m15:59:32.836829 [debug] [ThreadPool]: On create_retail_sales_main: Close
+[0m15:59:32.839155 [debug] [ThreadPool]: Re-using an available connection from the pool (formerly create_retail_sales_main, now list_retail_sales_main)
+[0m15:59:32.847760 [debug] [ThreadPool]: Using duckdb connection "list_retail_sales_main"
+[0m15:59:32.848369 [debug] [ThreadPool]: On list_retail_sales_main: BEGIN
+[0m15:59:32.848887 [debug] [ThreadPool]: Opening a new connection, currently in state closed
+[0m15:59:32.849714 [debug] [ThreadPool]: SQL status: OK in 0.001 seconds
+[0m15:59:32.850236 [debug] [ThreadPool]: Using duckdb connection "list_retail_sales_main"
+[0m15:59:32.850777 [debug] [ThreadPool]: On list_retail_sales_main: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "default", "target_name": "dev", "connection_name": "list_retail_sales_main"} */
+select
+      'retail_sales' as database,
+      table_name as name,
+      table_schema as schema,
+      CASE table_type
+        WHEN 'BASE TABLE' THEN 'table'
+        WHEN 'VIEW' THEN 'view'
+        WHEN 'LOCAL TEMPORARY' THEN 'table'
+        END as type
+    from system.information_schema.tables
+    where lower(table_schema) = 'main'
+    and lower(table_catalog) = 'retail_sales'
+  
+[0m15:59:32.871769 [debug] [ThreadPool]: SQL status: OK in 0.020 seconds
+[0m15:59:32.873826 [debug] [ThreadPool]: On list_retail_sales_main: ROLLBACK
+[0m15:59:32.874702 [debug] [ThreadPool]: Failed to rollback 'list_retail_sales_main'
+[0m15:59:32.875224 [debug] [ThreadPool]: On list_retail_sales_main: Close
+[0m15:59:32.877713 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '80656be8-95bb-4b65-91fb-572e34c2869e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe3c86955d0>]}
+[0m15:59:32.878553 [debug] [MainThread]: Using duckdb connection "master"
+[0m15:59:32.879085 [debug] [MainThread]: On master: BEGIN
+[0m15:59:32.879582 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m15:59:32.880388 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m15:59:32.880924 [debug] [MainThread]: On master: COMMIT
+[0m15:59:32.881459 [debug] [MainThread]: Using duckdb connection "master"
+[0m15:59:32.881970 [debug] [MainThread]: On master: COMMIT
+[0m15:59:32.882635 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m15:59:32.883178 [debug] [MainThread]: On master: Close
+[0m15:59:32.886073 [debug] [Thread-1 (]: Began running node model.retail_sales_pipeline.stg_customers
+[0m15:59:32.887163 [info ] [Thread-1 (]: 1 of 4 START sql view model main.stg_customers ................................. [RUN]
+[0m15:59:32.888037 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly list_retail_sales_main, now model.retail_sales_pipeline.stg_customers)
+[0m15:59:32.888694 [debug] [Thread-1 (]: Began compiling node model.retail_sales_pipeline.stg_customers
+[0m15:59:32.901192 [debug] [Thread-1 (]: Writing injected SQL for node "model.retail_sales_pipeline.stg_customers"
+[0m15:59:32.902395 [debug] [Thread-1 (]: Began executing node model.retail_sales_pipeline.stg_customers
+[0m15:59:32.955601 [debug] [Thread-1 (]: Writing runtime sql for node "model.retail_sales_pipeline.stg_customers"
+[0m15:59:32.956851 [debug] [Thread-1 (]: Using duckdb connection "model.retail_sales_pipeline.stg_customers"
+[0m15:59:32.957502 [debug] [Thread-1 (]: On model.retail_sales_pipeline.stg_customers: BEGIN
+[0m15:59:32.958100 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:59:32.959069 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:59:32.959687 [debug] [Thread-1 (]: Using duckdb connection "model.retail_sales_pipeline.stg_customers"
+[0m15:59:32.960315 [debug] [Thread-1 (]: On model.retail_sales_pipeline.stg_customers: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "default", "target_name": "dev", "node_id": "model.retail_sales_pipeline.stg_customers"} */
+
+  
+  create view "retail_sales"."main"."stg_customers__dbt_tmp" as (
+    SELECT
+    customer_id,
+    customer_name,
+    city,
+    region
+FROM "retail_sales"."main"."raw_customers"
+  );
+
+[0m15:59:32.961496 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:59:32.972795 [debug] [Thread-1 (]: Using duckdb connection "model.retail_sales_pipeline.stg_customers"
+[0m15:59:32.973718 [debug] [Thread-1 (]: On model.retail_sales_pipeline.stg_customers: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "default", "target_name": "dev", "node_id": "model.retail_sales_pipeline.stg_customers"} */
+alter view "retail_sales"."main"."stg_customers" rename to "stg_customers__dbt_backup"
+[0m15:59:32.974891 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m15:59:32.979994 [debug] [Thread-1 (]: Using duckdb connection "model.retail_sales_pipeline.stg_customers"
+[0m15:59:32.980738 [debug] [Thread-1 (]: On model.retail_sales_pipeline.stg_customers: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "default", "target_name": "dev", "node_id": "model.retail_sales_pipeline.stg_customers"} */
+alter view "retail_sales"."main"."stg_customers__dbt_tmp" rename to "stg_customers"
+[0m15:59:32.981727 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m15:59:33.001761 [debug] [Thread-1 (]: On model.retail_sales_pipeline.stg_customers: COMMIT
+[0m15:59:33.002507 [debug] [Thread-1 (]: Using duckdb connection "model.retail_sales_pipeline.stg_customers"
+[0m15:59:33.003119 [debug] [Thread-1 (]: On model.retail_sales_pipeline.stg_customers: COMMIT
+[0m15:59:33.004680 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:59:33.013045 [debug] [Thread-1 (]: Using duckdb connection "model.retail_sales_pipeline.stg_customers"
+[0m15:59:33.013786 [debug] [Thread-1 (]: On model.retail_sales_pipeline.stg_customers: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "default", "target_name": "dev", "node_id": "model.retail_sales_pipeline.stg_customers"} */
+drop view if exists "retail_sales"."main"."stg_customers__dbt_backup" cascade
+[0m15:59:33.015027 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:59:33.019027 [debug] [Thread-1 (]: On model.retail_sales_pipeline.stg_customers: Close
+[0m15:59:33.021791 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '80656be8-95bb-4b65-91fb-572e34c2869e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe3a81da6b0>]}
+[0m15:59:33.022814 [info ] [Thread-1 (]: 1 of 4 OK created sql view model main.stg_customers ............................ [[32mOK[0m in 0.13s]
+[0m15:59:33.023770 [debug] [Thread-1 (]: Finished running node model.retail_sales_pipeline.stg_customers
+[0m15:59:33.024427 [debug] [Thread-1 (]: Began running node model.retail_sales_pipeline.stg_orders
+[0m15:59:33.025354 [info ] [Thread-1 (]: 2 of 4 START sql view model main.stg_orders .................................... [RUN]
+[0m15:59:33.026220 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.retail_sales_pipeline.stg_customers, now model.retail_sales_pipeline.stg_orders)
+[0m15:59:33.026841 [debug] [Thread-1 (]: Began compiling node model.retail_sales_pipeline.stg_orders
+[0m15:59:33.031441 [debug] [Thread-1 (]: Writing injected SQL for node "model.retail_sales_pipeline.stg_orders"
+[0m15:59:33.032665 [debug] [Thread-1 (]: Began executing node model.retail_sales_pipeline.stg_orders
+[0m15:59:33.038976 [debug] [Thread-1 (]: Writing runtime sql for node "model.retail_sales_pipeline.stg_orders"
+[0m15:59:33.040153 [debug] [Thread-1 (]: Using duckdb connection "model.retail_sales_pipeline.stg_orders"
+[0m15:59:33.040806 [debug] [Thread-1 (]: On model.retail_sales_pipeline.stg_orders: BEGIN
+[0m15:59:33.041380 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:59:33.042262 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:59:33.043010 [debug] [Thread-1 (]: Using duckdb connection "model.retail_sales_pipeline.stg_orders"
+[0m15:59:33.043644 [debug] [Thread-1 (]: On model.retail_sales_pipeline.stg_orders: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "default", "target_name": "dev", "node_id": "model.retail_sales_pipeline.stg_orders"} */
+
+  
+  create view "retail_sales"."main"."stg_orders__dbt_tmp" as (
+    SELECT
+    order_id,
+    customer_name,
+    product_name,
+    category,
+    order_date,
+    amount
+FROM "retail_sales"."main"."raw_sales_data"
+  );
+
+[0m15:59:33.044661 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m15:59:33.049775 [debug] [Thread-1 (]: Using duckdb connection "model.retail_sales_pipeline.stg_orders"
+[0m15:59:33.050510 [debug] [Thread-1 (]: On model.retail_sales_pipeline.stg_orders: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "default", "target_name": "dev", "node_id": "model.retail_sales_pipeline.stg_orders"} */
+alter view "retail_sales"."main"."stg_orders" rename to "stg_orders__dbt_backup"
+[0m15:59:33.051874 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m15:59:33.058907 [debug] [Thread-1 (]: Using duckdb connection "model.retail_sales_pipeline.stg_orders"
+[0m15:59:33.059797 [debug] [Thread-1 (]: On model.retail_sales_pipeline.stg_orders: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "default", "target_name": "dev", "node_id": "model.retail_sales_pipeline.stg_orders"} */
+alter view "retail_sales"."main"."stg_orders__dbt_tmp" rename to "stg_orders"
+[0m15:59:33.061039 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m15:59:33.063407 [debug] [Thread-1 (]: On model.retail_sales_pipeline.stg_orders: COMMIT
+[0m15:59:33.064033 [debug] [Thread-1 (]: Using duckdb connection "model.retail_sales_pipeline.stg_orders"
+[0m15:59:33.064620 [debug] [Thread-1 (]: On model.retail_sales_pipeline.stg_orders: COMMIT
+[0m15:59:33.065680 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m15:59:33.070550 [debug] [Thread-1 (]: Using duckdb connection "model.retail_sales_pipeline.stg_orders"
+[0m15:59:33.071268 [debug] [Thread-1 (]: On model.retail_sales_pipeline.stg_orders: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "default", "target_name": "dev", "node_id": "model.retail_sales_pipeline.stg_orders"} */
+drop view if exists "retail_sales"."main"."stg_orders__dbt_backup" cascade
+[0m15:59:33.072455 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:59:33.074771 [debug] [Thread-1 (]: On model.retail_sales_pipeline.stg_orders: Close
+[0m15:59:33.075749 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '80656be8-95bb-4b65-91fb-572e34c2869e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe3f85aa560>]}
+[0m15:59:33.076889 [info ] [Thread-1 (]: 2 of 4 OK created sql view model main.stg_orders ............................... [[32mOK[0m in 0.05s]
+[0m15:59:33.078849 [debug] [Thread-1 (]: Finished running node model.retail_sales_pipeline.stg_orders
+[0m15:59:33.079641 [debug] [Thread-1 (]: Began running node model.retail_sales_pipeline.stg_products
+[0m15:59:33.080525 [info ] [Thread-1 (]: 3 of 4 START sql view model main.stg_products .................................. [RUN]
+[0m15:59:33.081308 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.retail_sales_pipeline.stg_orders, now model.retail_sales_pipeline.stg_products)
+[0m15:59:33.081993 [debug] [Thread-1 (]: Began compiling node model.retail_sales_pipeline.stg_products
+[0m15:59:33.087037 [debug] [Thread-1 (]: Writing injected SQL for node "model.retail_sales_pipeline.stg_products"
+[0m15:59:33.088140 [debug] [Thread-1 (]: Began executing node model.retail_sales_pipeline.stg_products
+[0m15:59:33.094995 [debug] [Thread-1 (]: Writing runtime sql for node "model.retail_sales_pipeline.stg_products"
+[0m15:59:33.096301 [debug] [Thread-1 (]: Using duckdb connection "model.retail_sales_pipeline.stg_products"
+[0m15:59:33.096955 [debug] [Thread-1 (]: On model.retail_sales_pipeline.stg_products: BEGIN
+[0m15:59:33.097617 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:59:33.098990 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:59:33.099865 [debug] [Thread-1 (]: Using duckdb connection "model.retail_sales_pipeline.stg_products"
+[0m15:59:33.100770 [debug] [Thread-1 (]: On model.retail_sales_pipeline.stg_products: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "default", "target_name": "dev", "node_id": "model.retail_sales_pipeline.stg_products"} */
+
+  
+  create view "retail_sales"."main"."stg_products__dbt_tmp" as (
+    SELECT
+    product_id,
+    product_name,
+    category,
+    price
+FROM "retail_sales"."main"."raw_products"
+  );
+
+[0m15:59:33.101932 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m15:59:33.107186 [debug] [Thread-1 (]: Using duckdb connection "model.retail_sales_pipeline.stg_products"
+[0m15:59:33.108101 [debug] [Thread-1 (]: On model.retail_sales_pipeline.stg_products: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "default", "target_name": "dev", "node_id": "model.retail_sales_pipeline.stg_products"} */
+alter view "retail_sales"."main"."stg_products" rename to "stg_products__dbt_backup"
+[0m15:59:33.109588 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m15:59:33.114846 [debug] [Thread-1 (]: Using duckdb connection "model.retail_sales_pipeline.stg_products"
+[0m15:59:33.115570 [debug] [Thread-1 (]: On model.retail_sales_pipeline.stg_products: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "default", "target_name": "dev", "node_id": "model.retail_sales_pipeline.stg_products"} */
+alter view "retail_sales"."main"."stg_products__dbt_tmp" rename to "stg_products"
+[0m15:59:33.116520 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m15:59:33.119268 [debug] [Thread-1 (]: On model.retail_sales_pipeline.stg_products: COMMIT
+[0m15:59:33.120115 [debug] [Thread-1 (]: Using duckdb connection "model.retail_sales_pipeline.stg_products"
+[0m15:59:33.120969 [debug] [Thread-1 (]: On model.retail_sales_pipeline.stg_products: COMMIT
+[0m15:59:33.122386 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:59:33.126932 [debug] [Thread-1 (]: Using duckdb connection "model.retail_sales_pipeline.stg_products"
+[0m15:59:33.127648 [debug] [Thread-1 (]: On model.retail_sales_pipeline.stg_products: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "default", "target_name": "dev", "node_id": "model.retail_sales_pipeline.stg_products"} */
+drop view if exists "retail_sales"."main"."stg_products__dbt_backup" cascade
+[0m15:59:33.128874 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:59:33.131056 [debug] [Thread-1 (]: On model.retail_sales_pipeline.stg_products: Close
+[0m15:59:33.132046 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '80656be8-95bb-4b65-91fb-572e34c2869e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe3f85deef0>]}
+[0m15:59:33.133169 [info ] [Thread-1 (]: 3 of 4 OK created sql view model main.stg_products ............................. [[32mOK[0m in 0.05s]
+[0m15:59:33.134819 [debug] [Thread-1 (]: Finished running node model.retail_sales_pipeline.stg_products
+[0m15:59:33.136257 [debug] [Thread-1 (]: Began running node model.retail_sales_pipeline.fct_sales
+[0m15:59:33.137503 [info ] [Thread-1 (]: 4 of 4 START sql table model main.fct_sales .................................... [RUN]
+[0m15:59:33.138377 [debug] [Thread-1 (]: Re-using an available connection from the pool (formerly model.retail_sales_pipeline.stg_products, now model.retail_sales_pipeline.fct_sales)
+[0m15:59:33.139031 [debug] [Thread-1 (]: Began compiling node model.retail_sales_pipeline.fct_sales
+[0m15:59:33.146445 [debug] [Thread-1 (]: Writing injected SQL for node "model.retail_sales_pipeline.fct_sales"
+[0m15:59:33.147558 [debug] [Thread-1 (]: Began executing node model.retail_sales_pipeline.fct_sales
+[0m15:59:33.183590 [debug] [Thread-1 (]: Writing runtime sql for node "model.retail_sales_pipeline.fct_sales"
+[0m15:59:33.185015 [debug] [Thread-1 (]: Using duckdb connection "model.retail_sales_pipeline.fct_sales"
+[0m15:59:33.185663 [debug] [Thread-1 (]: On model.retail_sales_pipeline.fct_sales: BEGIN
+[0m15:59:33.186272 [debug] [Thread-1 (]: Opening a new connection, currently in state closed
+[0m15:59:33.187474 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:59:33.189015 [debug] [Thread-1 (]: Using duckdb connection "model.retail_sales_pipeline.fct_sales"
+[0m15:59:33.189772 [debug] [Thread-1 (]: On model.retail_sales_pipeline.fct_sales: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "default", "target_name": "dev", "node_id": "model.retail_sales_pipeline.fct_sales"} */
+
+  
+    
+    
+
+    create  table
+      "retail_sales"."main"."fct_sales__dbt_tmp"
+  
+    as (
+      WITH orders AS (
+    SELECT * FROM "retail_sales"."main"."stg_orders"
+),
+    customers AS (
+    SELECT * FROM "retail_sales"."main"."stg_customers"
+    ),
+    products AS (
+    SELECT * FROM "retail_sales"."main"."stg_products"
+    )
+
+SELECT
+    o.order_id,
+    o.order_date,
+    c.customer_name,
+    c.city,
+    c.region,
+    p.product_name,
+    p.category,
+    p.price,
+    o.amount
+FROM orders o
+LEFT JOIN customers c ON o.customer_name = c.customer_name
+LEFT JOIN products p ON o.product_name = p.product_name
+    );
+  
+  
+[0m15:59:33.193953 [debug] [Thread-1 (]: SQL status: OK in 0.003 seconds
+[0m15:59:33.199301 [debug] [Thread-1 (]: Using duckdb connection "model.retail_sales_pipeline.fct_sales"
+[0m15:59:33.200102 [debug] [Thread-1 (]: On model.retail_sales_pipeline.fct_sales: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "default", "target_name": "dev", "node_id": "model.retail_sales_pipeline.fct_sales"} */
+alter table "retail_sales"."main"."fct_sales__dbt_tmp" rename to "fct_sales"
+[0m15:59:33.201573 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m15:59:33.209791 [debug] [Thread-1 (]: On model.retail_sales_pipeline.fct_sales: COMMIT
+[0m15:59:33.210770 [debug] [Thread-1 (]: Using duckdb connection "model.retail_sales_pipeline.fct_sales"
+[0m15:59:33.211410 [debug] [Thread-1 (]: On model.retail_sales_pipeline.fct_sales: COMMIT
+[0m15:59:33.212710 [debug] [Thread-1 (]: SQL status: OK in 0.001 seconds
+[0m15:59:33.217006 [debug] [Thread-1 (]: Using duckdb connection "model.retail_sales_pipeline.fct_sales"
+[0m15:59:33.217769 [debug] [Thread-1 (]: On model.retail_sales_pipeline.fct_sales: /* {"app": "dbt", "dbt_version": "1.9.4", "profile_name": "default", "target_name": "dev", "node_id": "model.retail_sales_pipeline.fct_sales"} */
+drop table if exists "retail_sales"."main"."fct_sales__dbt_backup" cascade
+[0m15:59:33.219048 [debug] [Thread-1 (]: SQL status: OK in 0.000 seconds
+[0m15:59:33.221599 [debug] [Thread-1 (]: On model.retail_sales_pipeline.fct_sales: Close
+[0m15:59:33.222568 [debug] [Thread-1 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '80656be8-95bb-4b65-91fb-572e34c2869e', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe3b9343700>]}
+[0m15:59:33.223585 [info ] [Thread-1 (]: 4 of 4 OK created sql table model main.fct_sales ............................... [[32mOK[0m in 0.08s]
+[0m15:59:33.224556 [debug] [Thread-1 (]: Finished running node model.retail_sales_pipeline.fct_sales
+[0m15:59:33.226217 [debug] [MainThread]: Using duckdb connection "master"
+[0m15:59:33.226909 [debug] [MainThread]: On master: BEGIN
+[0m15:59:33.227449 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m15:59:33.228307 [debug] [MainThread]: SQL status: OK in 0.001 seconds
+[0m15:59:33.228856 [debug] [MainThread]: On master: COMMIT
+[0m15:59:33.229389 [debug] [MainThread]: Using duckdb connection "master"
+[0m15:59:33.229894 [debug] [MainThread]: On master: COMMIT
+[0m15:59:33.230823 [debug] [MainThread]: SQL status: OK in 0.000 seconds
+[0m15:59:33.231440 [debug] [MainThread]: On master: Close
+[0m15:59:33.232166 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m15:59:33.232688 [debug] [MainThread]: Connection 'model.retail_sales_pipeline.fct_sales' was properly closed.
+[0m15:59:33.233569 [info ] [MainThread]: 
+[0m15:59:33.234334 [info ] [MainThread]: Finished running 1 table model, 3 view models in 0 hours 0 minutes and 0.61 seconds (0.61s).
+[0m15:59:33.236531 [debug] [MainThread]: Command end result
+[0m15:59:33.279987 [debug] [MainThread]: Wrote artifact WritableManifest to /Users/truptikirve/GenAI_Projects/DataEngineering/retail_sales_pipeline/dbt_project/target/manifest.json
+[0m15:59:33.282330 [debug] [MainThread]: Wrote artifact SemanticManifest to /Users/truptikirve/GenAI_Projects/DataEngineering/retail_sales_pipeline/dbt_project/target/semantic_manifest.json
+[0m15:59:33.294425 [debug] [MainThread]: Wrote artifact RunExecutionResult to /Users/truptikirve/GenAI_Projects/DataEngineering/retail_sales_pipeline/dbt_project/target/run_results.json
+[0m15:59:33.295118 [info ] [MainThread]: 
+[0m15:59:33.295778 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m15:59:33.296325 [info ] [MainThread]: 
+[0m15:59:33.296936 [info ] [MainThread]: Done. PASS=4 WARN=0 ERROR=0 SKIP=0 TOTAL=4
+[0m15:59:33.298982 [debug] [MainThread]: Resource report: {"command_name": "run", "command_success": true, "command_wall_clock_time": 2.7252827, "process_in_blocks": "0", "process_kernel_time": 0.810987, "process_mem_max_rss": "138973184", "process_out_blocks": "0", "process_user_time": 5.258401}
+[0m15:59:33.299981 [debug] [MainThread]: Command `dbt run` succeeded at 15:59:33.299728 after 2.73 seconds
+[0m15:59:33.300748 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe3e84ef700>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe3a81da6b0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7fe3884102e0>]}
+[0m15:59:33.301627 [debug] [MainThread]: Flushing usage events
+[0m15:59:33.518545 [debug] [MainThread]: An error was encountered while trying to flush usage events

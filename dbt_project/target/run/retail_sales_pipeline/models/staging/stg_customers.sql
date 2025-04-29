@@ -6,5 +6,5 @@
     customer_name,
     city,
     region
-FROM raw_customers
+FROM "retail_sales"."main"."raw_customers"
   );

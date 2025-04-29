@@ -1,11 +1,11 @@
 WITH orders AS (
-    SELECT * FROM stg_orders
+    SELECT * FROM "retail_sales"."main"."stg_orders"
 ),
     customers AS (
-    SELECT * FROM stg_customers
+    SELECT * FROM "retail_sales"."main"."stg_customers"
     ),
     products AS (
-    SELECT * FROM stg_products
+    SELECT * FROM "retail_sales"."main"."stg_products"
     )
 
 SELECT

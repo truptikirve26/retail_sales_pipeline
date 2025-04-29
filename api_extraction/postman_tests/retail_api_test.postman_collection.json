@@ -1,0 +1,71 @@
+{
+	"info": {
+		"_postman_id": "a3d9674f-d452-47e0-9fd4-60c6680695ef",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "21488304"
+	},
+	"item": [
+		{
+			"name": "https://api.vetspire.com/graphql",
+			"request": {
+				"auth": {
+					"type": "apikey",
+					"apikey": [
+						{
+							"key": "value",
+							"value": "SFMyNTY.g2gDbQAAAAoyNjY6MzAxNjg2bgYAd9GrC4EBYgABUYA.Y08CCVdiaVAF0pQ6DUTNxf9DmZtJLvHVII676l_610s",
+							"type": "string"
+						},
+						{
+							"key": "key",
+							"value": "Authorization",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "graphql",
+					"graphql": {
+						"query": "# query { product(id: 438159) {id, name, description}}\n# query { products {id, name, inventoryBucket}}\n# query { appointments(daycareOnly: 1) {id} }\n# query {appointment (id: 263924856){patientId}}\nsearch {appointments (ids: ['233670888','263924856']) {id,start, duration, updatedAt}}\n# query {appointments {id}}\n",
+						"variables": ""
+					}
+				},
+				"url": {
+					"raw": "https://api.vetspire.com/graphql",
+					"protocol": "https",
+					"host": [
+						"api",
+						"vetspire",
+						"com"
+					],
+					"path": [
+						"graphql"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://mockapi.io/retail_sales_data",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://mockapi.io/retail_sales_data",
+					"protocol": "https",
+					"host": [
+						"mockapi",
+						"io"
+					],
+					"path": [
+						"retail_sales_data"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

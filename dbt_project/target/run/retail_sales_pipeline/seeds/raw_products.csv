@@ -1,0 +1,13 @@
+
+    
+    
+    
+    create table "retail_sales"."main"."raw_products" ("product_id" integer,"product_name" text,"category" text,"price" float8)
+  ;
+    -- dbt seed --
+    
+          COPY "retail_sales"."main"."raw_products" FROM '/Users/truptikirve/GenAI_Projects/DataEngineering/retail_sales_pipeline/dbt_project/seeds/raw_products.csv' (FORMAT CSV, HEADER TRUE, DELIMITER ',')
+        
+
+;
+  
